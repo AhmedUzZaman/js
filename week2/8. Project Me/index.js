@@ -23,20 +23,21 @@ pushBtn.addEventListener("click", function(){
 
 const popBtn = document.getElementById("pop-btn")
 popBtn.addEventListener("click", function(){
-    const emojiRemove = document.getElementById("emoji-container")
+    const emojiRemove = document.getElementById("emoji-input")
     myEmojis.pop(emojiRemove.value)
     renderEmojis()
 })
 
 const shiftBtn = document.getElementById("shift-btn")
 shiftBtn.addEventListener("click", function(){
-    const emojiShift = document.getElementById("emoji-container")
+    const emojiShift = document.getElementById("emoji-input")
     myEmojis.shift(emojiShift.value)
     renderEmojis()
 })
 
 const unshiftBtn = document.getElementById("unshift-btn")
 unshiftBtn.addEventListener("click", function(){
-    //
+    const emojiUnShift = document.getElementById("emoji-input")
+    myEmojis.unshift(emojiUnShift.value)
     renderEmojis()
 })
